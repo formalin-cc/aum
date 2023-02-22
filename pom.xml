@@ -23,6 +23,8 @@
 <!--        <module>aum-unibiz</module>     &lt;!&ndash;统一业务层 12101~ &ndash;&gt;-->
 <!--        <module>aum-example</module>    &lt;!&ndash;项目示例example&ndash;&gt;-->
 <!--        <module>aum-bserver</module>    &lt;!&ndash;分布式基础服务 12011~ &ndash;&gt;-->
+        <module>aum-uniportal</module>
+        <module>aum-uniportal/uportal-gateway</module>
     </modules>
 
     <properties>

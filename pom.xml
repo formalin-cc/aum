@@ -18,11 +18,11 @@
     <description>Accumulate --> Spring Cloud</description>
 
     <modules>
-<!--        <module>aum-unicore</module>    &lt;!&ndash;全局核心包&ndash;&gt;-->
-<!--        <module>aum-uniportal</module>  &lt;!&ndash;统一网关入口 12000~ &ndash;&gt;-->
-<!--        <module>aum-unibiz</module>     &lt;!&ndash;统一业务层 12101~ &ndash;&gt;-->
-<!--        <module>aum-example</module>    &lt;!&ndash;项目示例example&ndash;&gt;-->
-<!--        <module>aum-bserver</module>    &lt;!&ndash;分布式基础服务 12011~ &ndash;&gt;-->
+        <module>aum-unicore</module>    <!--全局核心包-->
+        <module>aum-uniportal</module>  <!--统一网关入口 12000~ -->
+        <module>aum-unibiz</module>     <!--统一业务层 12101~ -->
+        <module>aum-example</module>    <!--项目示例example-->
+        <module>aum-bserver</module>    <!--分布式基础服务 12011~ -->
     </modules>
 
     <properties>

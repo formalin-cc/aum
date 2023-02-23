@@ -10,6 +10,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <groupId>io.syd</groupId>
     <artifactId>Accumulate</artifactId>
@@ -18,30 +30,29 @@
     <description>Accumulate --> Spring Cloud</description>
 
     <modules>
-<!--        <module>aum-unicore</module>    &lt;!&ndash;全局核心包&ndash;&gt;-->
-<!--        <module>aum-uniportal</module>  &lt;!&ndash;统一网关入口 12000~ &ndash;&gt;-->
-<!--        <module>aum-unibiz</module>     &lt;!&ndash;统一业务层 12101~ &ndash;&gt;-->
-<!--        <module>aum-example</module>    &lt;!&ndash;项目示例example&ndash;&gt;-->
-<!--        <module>aum-bserver</module>    &lt;!&ndash;分布式基础服务 12011~ &ndash;&gt;-->
-        <module>aum-uniportal</module>
-        <module>aum-uniportal/uportal-gateway</module>
+        <module>aum-unicore</module>    <!--全局核心包-->
+        <module>aum-uniportal</module>  <!--统一网关入口 12000~ -->
+        <module>aum-unibiz</module>     <!--统一业务层 12101~ -->
+        <module>aum-bserver</module> <!--分布式基础服务 12011~ -->
     </modules>
 
     <properties>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
-        <spring-cloud.version>2021.0.1</spring-cloud.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
+        <spring-cloud-alibaba.version>2021.0.1.0
+        </spring-cloud-alibaba.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
+        <spring-cloud.version>2021.0.1
+        </spring-cloud.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
 
-<!--        <mapstruct.version>1.5.2.Final</mapstruct.version> &lt;!&ndash; https://github.com/mapstruct/mapstruct &ndash;&gt;-->
-<!--        <fastjson.version>1.2.76</fastjson.version> &lt;!&ndash; https://github.com/alibaba/fastjson &ndash;&gt;-->
-<!--        <caffeine.version>3.1.0</caffeine.version> &lt;!&ndash; https://github.com/ben-manes/caffeine &ndash;&gt;-->
-<!--        <springdoc.version>1.6.9</springdoc.version> &lt;!&ndash; https://github.com/springdoc/springdoc-openapi &ndash;&gt;-->
-<!--        <easyexcel.version>3.1.1</easyexcel.version> &lt;!&ndash; https://easyexcel.opensource.alibaba.com/docs/current/ &ndash;&gt;-->
-<!--        <mybatis.version>2.2.2</mybatis.version> &lt;!&ndash; https://github.com/mybatis/spring-boot-starter &ndash;&gt;-->
-<!--        <mapper.version>2.0.0</mapper.version> &lt;!&ndash; https://mapper.mybatis.io/docs/1.getting-started.html &ndash;&gt;-->
-<!--        <hutool.version>5.8.11</hutool.version> &lt;!&ndash; https://www.hutool.cn &ndash;&gt;-->
+        <!--        <mapstruct.version>1.5.2.Final</mapstruct.version> &lt;!&ndash; https://github.com/mapstruct/mapstruct &ndash;&gt;-->
+        <!--        <fastjson.version>1.2.76</fastjson.version> &lt;!&ndash; https://github.com/alibaba/fastjson &ndash;&gt;-->
+        <!--        <caffeine.version>3.1.0</caffeine.version> &lt;!&ndash; https://github.com/ben-manes/caffeine &ndash;&gt;-->
+        <!--        <springdoc.version>1.6.9</springdoc.version> &lt;!&ndash; https://github.com/springdoc/springdoc-openapi &ndash;&gt;-->
+        <!--        <easyexcel.version>3.1.1</easyexcel.version> &lt;!&ndash; https://easyexcel.opensource.alibaba.com/docs/current/ &ndash;&gt;-->
+        <!--        <mybatis.version>2.2.2</mybatis.version> &lt;!&ndash; https://github.com/mybatis/spring-boot-starter &ndash;&gt;-->
+        <!--        <mapper.version>2.0.0</mapper.version> &lt;!&ndash; https://mapper.mybatis.io/docs/1.getting-started.html &ndash;&gt;-->
+        <!--        <hutool.version>5.8.11</hutool.version> &lt;!&ndash; https://www.hutool.cn &ndash;&gt;-->
     </properties>
 
     <dependencyManagement>
@@ -65,42 +76,42 @@
         </dependencies>
     </dependencyManagement>
 
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <source>${java.version}</source>-->
-<!--                    <target>${java.version}</target>-->
-<!--                    <encoding>${project.build.sourceEncoding}</encoding>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <groupId>com.github.apiggs</groupId>-->
-<!--                <artifactId>apiggs-maven-plugin</artifactId>-->
-<!--                <version>1.6</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <phase>compile</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>apiggs</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash; options in there &ndash;&gt;-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>&lt;!&ndash; 跳过Maven测试 &ndash;&gt;-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <skip>true</skip>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
+    <!--    <build>-->
+    <!--        <plugins>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                <artifactId>maven-compiler-plugin</artifactId>-->
+    <!--                <configuration>-->
+    <!--                    <source>${java.version}</source>-->
+    <!--                    <target>${java.version}</target>-->
+    <!--                    <encoding>${project.build.sourceEncoding}</encoding>-->
+    <!--                </configuration>-->
+    <!--            </plugin>-->
+    <!--            <plugin>-->
+    <!--                <groupId>com.github.apiggs</groupId>-->
+    <!--                <artifactId>apiggs-maven-plugin</artifactId>-->
+    <!--                <version>1.6</version>-->
+    <!--                <executions>-->
+    <!--                    <execution>-->
+    <!--                        <phase>compile</phase>-->
+    <!--                        <goals>-->
+    <!--                            <goal>apiggs</goal>-->
+    <!--                        </goals>-->
+    <!--                    </execution>-->
+    <!--                </executions>-->
+    <!--                <configuration>-->
+    <!--                    &lt;!&ndash; options in there &ndash;&gt;-->
+    <!--                </configuration>-->
+    <!--            </plugin>-->
+    <!--            <plugin>&lt;!&ndash; 跳过Maven测试 &ndash;&gt;-->
+    <!--                <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                <artifactId>maven-surefire-plugin</artifactId>-->
+    <!--                <configuration>-->
+    <!--                    <skip>true</skip>-->
+    <!--                </configuration>-->
+    <!--            </plugin>-->
+    <!--        </plugins>-->
+    <!--    </build>-->
 
     <!--    <repositories>-->
     <!--        <repository>-->

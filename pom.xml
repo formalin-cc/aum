@@ -29,17 +29,19 @@
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
-        <spring-cloud.version>2021.0.1</spring-cloud.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
+        <spring-cloud-alibaba.version>2021.0.1.0
+        </spring-cloud-alibaba.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
+        <spring-cloud.version>2021.0.1
+        </spring-cloud.version> <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
 
-<!--        <mapstruct.version>1.5.2.Final</mapstruct.version> &lt;!&ndash; https://github.com/mapstruct/mapstruct &ndash;&gt;-->
-<!--        <fastjson.version>1.2.76</fastjson.version> &lt;!&ndash; https://github.com/alibaba/fastjson &ndash;&gt;-->
-<!--        <caffeine.version>3.1.0</caffeine.version> &lt;!&ndash; https://github.com/ben-manes/caffeine &ndash;&gt;-->
-<!--        <springdoc.version>1.6.9</springdoc.version> &lt;!&ndash; https://github.com/springdoc/springdoc-openapi &ndash;&gt;-->
-<!--        <easyexcel.version>3.1.1</easyexcel.version> &lt;!&ndash; https://easyexcel.opensource.alibaba.com/docs/current/ &ndash;&gt;-->
-<!--        <mybatis.version>2.2.2</mybatis.version> &lt;!&ndash; https://github.com/mybatis/spring-boot-starter &ndash;&gt;-->
-<!--        <mapper.version>2.0.0</mapper.version> &lt;!&ndash; https://mapper.mybatis.io/docs/1.getting-started.html &ndash;&gt;-->
-<!--        <hutool.version>5.8.11</hutool.version> &lt;!&ndash; https://www.hutool.cn &ndash;&gt;-->
+        <mapstruct.version>1.5.2.Final</mapstruct.version> <!-- https://github.com/mapstruct/mapstruct -->
+        <fastjson.version>1.2.76</fastjson.version> <!-- https://github.com/alibaba/fastjson -->
+        <caffeine.version>3.1.0</caffeine.version> <!-- https://github.com/ben-manes/caffeine -->
+        <springdoc.version>1.6.9</springdoc.version> <!-- https://github.com/springdoc/springdoc-openapi -->
+        <easyexcel.version>3.1.1</easyexcel.version> <!-- https://easyexcel.opensource.alibaba.com/docs/current/ -->
+        <mybatis.version>2.2.2</mybatis.version> <!-- https://github.com/mybatis/spring-boot-starter -->
+        <mapper.version>2.0.0</mapper.version> <!-- https://mapper.mybatis.io/docs/1.getting-started.html -->
+        <hutool.version>5.8.11</hutool.version> <!-- https://www.hutool.cn -->
     </properties>
 
     <dependencyManagement>
@@ -63,42 +65,42 @@
         </dependencies>
     </dependencyManagement>
 
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <source>${java.version}</source>-->
-<!--                    <target>${java.version}</target>-->
-<!--                    <encoding>${project.build.sourceEncoding}</encoding>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <groupId>com.github.apiggs</groupId>-->
-<!--                <artifactId>apiggs-maven-plugin</artifactId>-->
-<!--                <version>1.6</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <phase>compile</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>apiggs</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash; options in there &ndash;&gt;-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>&lt;!&ndash; 跳过Maven测试 &ndash;&gt;-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <skip>true</skip>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.apiggs</groupId>
+                <artifactId>apiggs-maven-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>apiggs</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- options in there -->
+                </configuration>
+            </plugin>
+            <plugin><!-- 跳过Maven测试 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <!--    <repositories>-->
     <!--        <repository>-->

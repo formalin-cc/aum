@@ -22,7 +22,8 @@
         <module>aum-uniportal</module>  <!--统一网关入口 12000~ -->
         <module>aum-unibiz</module>     <!--统一业务层 12101~ -->
         <module>aum-example</module>    <!--项目示例example-->
-        <module>aum-bserver</module>    <!--分布式基础服务 12011~ -->
+        <module>aum-bserver</module>
+        <module>aum-uniportal/uportal-gateway</module>    <!--分布式基础服务 12011~ -->
     </modules>
 
     <properties>

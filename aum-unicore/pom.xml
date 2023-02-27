@@ -14,4 +14,15 @@
     <name>AUM-UNI-CORE</name>
     <description>AUM 全局核心包</description>
 
+    <modules>
+        <module>ucore-apis-starter</module>
+        <module>ucore-cache</module>
+        <module>ucore-dao</module>
+        <module>ucore-docs</module>
+        <module>ucore-monitor</module>
+        <module>ucore-spring</module>
+        <module>ucore-util</module>
+    </modules>
+
+
 </project>

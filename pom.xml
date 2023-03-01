@@ -30,6 +30,9 @@
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
         <!-- https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+
+        <mybatis.version>2.2.2</mybatis.version> <!-- https://github.com/mybatis/spring-boot-starter -->
+        <mapper.version>2.0.0</mapper.version> <!-- https://mapper.mybatis.io/docs/1.getting-started.html -->
     </properties>
 
     <dependencyManagement>

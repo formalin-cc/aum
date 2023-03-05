@@ -19,10 +19,10 @@
 
     <modules>
         <module>aum-unicore</module>    <!--全局核心包-->
-        <module>aum-uniportal</module>
-        <module>aum-unibiz</module>     <!--统一业务层 12101~ -->
+        <module>aum-uniportal</module>  <!--统一门户入口 12000~ -->
         <module>aum-bserver</module>    <!--分布式基础服务 12011~ -->
-        <module>aum-uniportal/uportal-gateway</module>    <!--统一网关入口 12000~ -->
+        <module>aum-unibiz</module>     <!--统一业务层 12101~ -->
+        <module>aum-example</module>
     </modules>
 
     <properties>

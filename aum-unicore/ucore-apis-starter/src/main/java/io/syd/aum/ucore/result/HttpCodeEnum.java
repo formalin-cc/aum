@@ -1,11 +1,11 @@
 package io.syd.aum.ucore.result;
 
 /**
- * @description: accumulate
- * @program: aum
- * @author: yc
- * @date: 2023-03-15 23:22
- **/
+ * @program: accumulate
+ * @description:
+ * @author: syd-qtaqkj
+ * @create: 2020-12-23 09:00
+ */
 public enum HttpCodeEnum {
     CODE_1XX_Informational          (1,   "",                                   ""),
     CONTINUE                        (100, "Continue",                           "请继续发送请求的剩余部分"),

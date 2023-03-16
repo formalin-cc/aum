@@ -10,7 +10,7 @@ import io.syd.aum.ucore.result.HttpCodeEnum;
  **/
 public class SysException extends RuntimeException {
 
-//    @java.io.Serial
+    //    @java.io.Serial
     private static final long serialVersionUID = 1L;
 
     private Integer code;
